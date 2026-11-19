@@ -1624,7 +1624,7 @@ p {
     font-size: clamp(23px, 5.8vw, 31px) !important;
     -webkit-text-stroke: .35px currentColor;
     line-height: 1.45 !important;
-    color: #49283c;
+    color: #562438;
     margin: 0 0 3px;
     text-shadow: 0 1px 8px rgba(255, 255, 255, 0.95), 0 0 16px rgba(255, 255, 255, 0.9);
     letter-spacing: 0;
@@ -1637,7 +1637,7 @@ p {
     font-size: clamp(20px, 5vw, 26px) !important;
     -webkit-text-stroke: .3px currentColor;
     line-height: 1.2 !important;
-    color: #49283c;
+    color: #562438;
     margin: 0;
     text-align: right;
     padding-right: 14px;
