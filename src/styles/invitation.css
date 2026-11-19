@@ -1621,7 +1621,7 @@ p {
 .hero-verse-text {
     font-family: "Imperial Script", cursive !important;
     font-weight: 400 !important;
-    font-size: clamp(23px, 5.8vw, 31px) !important;
+    font-size: clamp(18px, 4.7vw, 25px) !important;
     -webkit-text-stroke: .35px currentColor;
     line-height: 1.45 !important;
     color: #562438;
@@ -1653,7 +1653,7 @@ p {
 .hero-verse-ref {
     font-family: "Imperial Script", cursive !important;
     font-weight: 400 !important;
-    font-size: clamp(20px, 5vw, 26px) !important;
+    font-size: clamp(16px, 4.1vw, 21px) !important;
     -webkit-text-stroke: .3px currentColor;
     line-height: 1.2 !important;
     color: #562438;
@@ -2298,4 +2298,8 @@ p {
     font: italic 400 clamp(12.5px, 3.2vw, 14.5px)/1.2 "Cormorant Garamond", Georgia, serif;
     color: var(--ink);
     letter-spacing: .04em;
+}
+/* Client request: a little more space between "K" and "Marak" */
+.hero-person-name--groom {
+    word-spacing: .3em;
 }

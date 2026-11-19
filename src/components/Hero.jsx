@@ -46,7 +46,7 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
         <div className="hero-amp" aria-hidden="true">&amp;</div>
 
         <div className="hero-person-block">
-          <h2 className="hero-person-name">
+          <h2 className="hero-person-name hero-person-name--groom">
             {data.couple.fullNameGroom || data.couple.second}
           </h2>
           <p className="hero-person-parents">
