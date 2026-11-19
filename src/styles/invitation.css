@@ -1602,11 +1602,12 @@ p {
     margin: 0 auto !important;
     text-align: center;
     z-index: 2;
-    /* Spread the text evenly from the quote down to the "Scroll to explore" button (no big gap) */
-    bottom: 152px;
+    /* Keep the text compact and centred above the "Scroll to explore" button (small gap only) */
+    bottom: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
 }
 
 @media(max-width: 380px) {
