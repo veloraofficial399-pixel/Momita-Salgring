@@ -1602,12 +1602,6 @@ p {
     margin: 0 auto !important;
     text-align: center;
     z-index: 2;
-    /* Keep the text compact and centred above the "Scroll to explore" button (small gap only) */
-    bottom: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
 }
 
 @media(max-width: 380px) {
