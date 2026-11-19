@@ -1602,6 +1602,11 @@ p {
     margin: 0 auto !important;
     text-align: center;
     z-index: 2;
+    /* Spread the text evenly from the quote down to the "Scroll to explore" button (no big gap) */
+    bottom: 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media(max-width: 380px) {
