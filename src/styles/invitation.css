@@ -1619,9 +1619,10 @@ p {
 }
 
 .hero-verse-text {
-    font-family: "Allura", cursive !important;
+    font-family: "Imperial Script", cursive !important;
     font-weight: 400 !important;
     font-size: clamp(23px, 5.8vw, 31px) !important;
+    -webkit-text-stroke: .35px currentColor;
     line-height: 1.45 !important;
     color: #49283c;
     margin: 0 0 3px;
@@ -1631,9 +1632,10 @@ p {
 }
 
 .hero-verse-ref {
-    font-family: "Allura", cursive !important;
+    font-family: "Imperial Script", cursive !important;
     font-weight: 400 !important;
     font-size: clamp(20px, 5vw, 26px) !important;
+    -webkit-text-stroke: .3px currentColor;
     line-height: 1.2 !important;
     color: #49283c;
     margin: 0;
