@@ -1,5 +1,6 @@
 import { asset, safeURL } from '../utils'
 import Decor from './Decor'
+import VerseS from './VerseS'
 
 export default function Hero({ data, theme, heroRef, heroHidden }) {
   const { bride, groom } = data.parents || {}
@@ -18,7 +19,7 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
         {bibleVerse && (
           <div className="hero-verse">
             <p className="hero-verse-text">
-              “So they are no longer two, but one flesh.<br />
+              “<VerseS />o they are no longer two, but one flesh.<br />
               Therefore what God has joined together, let no one separate.”
             </p>
             <p className="hero-verse-ref">- Matthew 19:6</p>

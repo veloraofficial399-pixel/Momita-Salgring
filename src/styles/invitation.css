@@ -1631,6 +1631,25 @@ p {
     text-wrap: balance;
 }
 
+.verse-s {
+    display: inline-block;
+    position: relative;
+    width: .66em;
+    height: .87em;
+    margin-left: .03em;
+    vertical-align: -.11em;
+}
+
+.verse-s svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: .884em;
+    height: .866em;
+    overflow: visible;
+    fill: currentColor;
+}
+
 .hero-verse-ref {
     font-family: "Imperial Script", cursive !important;
     font-weight: 400 !important;
