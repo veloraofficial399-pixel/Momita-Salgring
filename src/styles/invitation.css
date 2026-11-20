@@ -1614,7 +1614,7 @@ p {
 
 .hero-verse {
     max-width: 420px;
-    margin: 0 auto 8px;
+    margin: 0 auto 24px;
     position: relative;
     text-align: center;
     /* same 2 lines as before, nudged a little lower */
