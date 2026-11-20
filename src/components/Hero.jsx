@@ -20,7 +20,8 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
           <div className="hero-verse">
             <p className="hero-verse-text">
               “<VerseS />o they are no longer two, but one flesh.<br />
-              Therefore what God has joined together, let no one separate.”
+              Therefore what God has joined together, let no one<br />
+              separate.”
             </p>
             <p className="hero-verse-ref">- Matthew 19:6</p>
           </div>
