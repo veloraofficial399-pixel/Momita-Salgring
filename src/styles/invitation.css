@@ -1616,8 +1616,8 @@ p {
     max-width: 420px;
     margin: 0 auto 30px;
     text-align: center;
-    /* sit in the clear middle of the arch, below the top flowers */
-    transform: translateY(22px);
+    /* same 2 lines as before, nudged a little lower */
+    transform: translateY(16px);
 }
 
 .hero-verse-text {
