@@ -2,6 +2,19 @@ import { asset, safeURL } from '../utils'
 import Decor from './Decor'
 import VerseS from './VerseS'
 
+// "First M Last": the middle initial sits exactly in the centre (above/below the "&").
+function CenteredName({ name }) {
+  const w = name.split(' ')
+  if (w.length !== 3) return name
+  return (
+    <span className="name-3" aria-label={name}>
+      <span className="name-3-first" aria-hidden="true">{w[0]}</span>
+      <span className="name-3-mid" aria-hidden="true">{w[1]}</span>
+      <span className="name-3-last" aria-hidden="true">{w[2]}</span>
+    </span>
+  )
+}
+
 export default function Hero({ data, theme, heroRef, heroHidden }) {
   const { bride, groom } = data.parents || {}
   const bibleVerse = data.wedding.bibleVerse
@@ -37,7 +50,7 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
 
         <div className="hero-person-block">
           <h1 className="hero-person-name" id="names" tabIndex={-1}>
-            {data.couple.fullNameBride || data.couple.first}
+            <CenteredName name={data.couple.fullNameBride || data.couple.first} />
           </h1>
           <p className="hero-person-parents">
             D/O {bride?.father} &amp; {bride?.mother}
@@ -47,17 +60,8 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
         <div className="hero-amp" aria-hidden="true">&amp;</div>
 
         <div className="hero-person-block">
-          <h2 className="hero-person-name hero-person-name--groom">
-            {(() => {
-              const words = (data.couple.fullNameGroom || data.couple.second).split(' ')
-              const last = words.pop()
-              return (
-                <>
-                  {words.join(' ')}{' '}
-                  <span className="hero-name-last">{last}</span>
-                </>
-              )
-            })()}
+          <h2 className="hero-person-name">
+            <CenteredName name={data.couple.fullNameGroom || data.couple.second} />
           </h2>
           <p className="hero-person-parents">
             S/O {groom?.father} &amp; {groom?.mother}

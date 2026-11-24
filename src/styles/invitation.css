@@ -2302,12 +2302,26 @@ p {
     color: var(--ink);
     letter-spacing: .04em;
 }
-/* Client request: a little more space between "K" and "Marak" */
-.hero-person-name--groom {
-    word-spacing: 0;
+/* Client request: middle initials (D, K) centred exactly over/under the "&" */
+.name-3 {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: .28em;
+    align-items: baseline;
 }
 
-/* K sits close to "Salgring"; the gap stays before "Marak" */
-.hero-person-name--groom .hero-name-last {
-    margin-left: .28em;
+.name-3-first {
+    justify-self: end;
+    white-space: nowrap;
+}
+
+.name-3-mid {
+    justify-self: center;
+    white-space: nowrap;
+}
+
+.name-3-last {
+    justify-self: start;
+    white-space: nowrap;
+    margin-left: .2em;
 }
