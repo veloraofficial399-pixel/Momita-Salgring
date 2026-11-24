@@ -48,7 +48,16 @@ export default function Hero({ data, theme, heroRef, heroHidden }) {
 
         <div className="hero-person-block">
           <h2 className="hero-person-name hero-person-name--groom">
-            {data.couple.fullNameGroom || data.couple.second}
+            {(() => {
+              const words = (data.couple.fullNameGroom || data.couple.second).split(' ')
+              const last = words.pop()
+              return (
+                <>
+                  {words.join(' ')}{' '}
+                  <span className="hero-name-last">{last}</span>
+                </>
+              )
+            })()}
           </h2>
           <p className="hero-person-parents">
             S/O {groom?.father} &amp; {groom?.mother}

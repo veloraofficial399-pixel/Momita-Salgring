@@ -2304,5 +2304,10 @@ p {
 }
 /* Client request: a little more space between "K" and "Marak" */
 .hero-person-name--groom {
-    word-spacing: .3em;
+    word-spacing: 0;
+}
+
+/* K sits close to "Salgring"; the gap stays before "Marak" */
+.hero-person-name--groom .hero-name-last {
+    margin-left: .28em;
 }
