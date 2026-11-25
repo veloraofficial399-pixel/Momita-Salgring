@@ -9,6 +9,7 @@ import Hero from './components/Hero'
 import Intro from './components/Intro'
 import Countdown from './components/Countdown'
 import Schedule from './components/Schedule'
+import Location from './components/Location'
 import Closing from './components/Closing'
 
 const theme = INVITATION_THEMES[data.theme]
@@ -261,6 +262,7 @@ export default function App() {
         <Intro data={data} />
         <Countdown data={data} />
         <Schedule data={data} />
+        <Location data={data} />
         <Closing data={data} onReopen={reopen} />
       </main>
       <div className="media-controls" id="media-controls" hidden={controlsHidden}>

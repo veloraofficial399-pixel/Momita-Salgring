@@ -54,7 +54,10 @@ export const WEDDING_DATA = {
   ],
   "venue": {
     "name": "Bride’s Residence",
-    "address": "At Bride’s Residence Khamari, Tikrikilla, West Garo Hills"
+    "address": "Khamari, Tikrikilla, West Garo Hills",
+    // Exact pin shared by the client.
+    "coords": "25.945017414236855,90.14791074898473",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=25.945017414236855,90.14791074898473"
   },
   "media": {
     "openingVideo": "./media/opening.mp4",
