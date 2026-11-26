@@ -35,7 +35,16 @@ export default function Closing({ data, onReopen }) {
             At Bride’s Residence Khamari,<br />
             Tikrikilla, West Garo Hills.
           </p>
-          <div className="venue-calligraphy-gap" aria-hidden="true"></div>
+          {/* Client request: location sits between the venue and the reception lines */}
+          <div className="venue-location">
+            <iframe
+              className="location-map"
+              title={`Map to ${data.venue.name}`}
+              src={`https://maps.google.com/maps?q=${data.venue.coords}&z=15&output=embed`}
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a className="action" href={data.venue.mapsUrl} target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+          </div>
           <p className="venue-calligraphy">
             Reception to follow<br />
             Till 7:00 PM
